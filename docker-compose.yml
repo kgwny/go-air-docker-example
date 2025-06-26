@@ -1,0 +1,21 @@
+services:
+  server:
+    build:
+      context: .
+    tty: true
+    ports:
+      - 8080:8080
+    # air の実行時に必要
+    volumes:
+      - .:/app
+
+# Dockerfile なしパターンの動作確認用設定
+# version: "3"
+#   services:
+#     go:
+#       build: .
+#       tty: true
+#       ports:
+#        - "8080:8080"
+#       volumes:
+#        - ./app:/go/src/app
