@@ -1,5 +1,10 @@
 # go-air-docker-example
 
+## air とは
+
+goの開発で Live Reload を実現するとのこと.  
+https://github.com/air-verse/air
+
 ## air の使い方
 
 ### air のインストール
@@ -44,12 +49,11 @@ running...
 Hello, World!
 ```
 
-## Dockerfile, docker-compose.yml ありの場合
+## air + Dockerfile + docker-compose.yml によるライブリロード
 ```
 docker compose up --build
 ```
 
-実行結果
 ```
 Attaching to server-1
 server-1  |
@@ -64,7 +68,7 @@ server-1  | running...
 server-1  | Hello, World!
 ```
 
-air 起動後に main.go を修正すると、ホットリロードにより即時実行される
+air 起動後に main.go を修正すると、go が即実行される
 ```
 server-1  | main.go has changed
 server-1  | building...
