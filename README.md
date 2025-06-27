@@ -2,7 +2,7 @@
 
 ## air とは
 
-goの開発で Live Reload を実現するとのこと.  
+Go の開発で Live Reload を実現するツール
 https://github.com/air-verse/air
 
 ## air の使い方
@@ -68,10 +68,10 @@ server-1  | running...
 server-1  | Hello, World!
 ```
 
-air 起動後に main.go を修正すると、go が即実行される
+air 起動後に main.go を修正すると、ビルドして再実行される
 ```
 server-1  | main.go has changed
 server-1  | building...
 server-1  | running...
-server-1  | Hello, World!!!
+server-1  | Hello, World! (^^)
 ```
