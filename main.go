@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, World!!!")
+	fmt.Println("Hello, World! (^^)")
 	http.ListenAndServe(":8080", nil)
 }
