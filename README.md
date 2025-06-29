@@ -51,7 +51,7 @@ Hello, World!
 
 ## air + Dockerfile + docker-compose.yml によるライブリロード
 ```
-docker compose up --build
+docker-compose up --build
 ```
 
 ```
